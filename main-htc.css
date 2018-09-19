@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+body{
+	overflow-y: auto;
+	overflow-x: auto;
+	padding: 0;
+	list-style: none;
+}
+
+.chrometop{
+	border: 1px solid #ccc;
+	
+}
+
+.logo-block{
+	width: 100px;
+	height: 100px;
+	border: 1px solid #ccc;
+}
+
+#htc{
+	width: 100px;
+	height: 100px;
+}	
+
+.top-nav-block{
+	border: 1px solid #ccc;
+	width: 300px;
+	height: 15px;
+	position: absolute;
+	top:20px;
+	left: 70%;
+	font-size: 5px;
+}
+
+.top-nav-wrapper{
+
+}
+
+.top-item{
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #ccc;
+}
+
+.circle{
+	background: #FF5733;
+	width: 10px;
+	height: 10px;
+}
+
+.top-title{
+	color: #7DC541;
+	text-decoration: none;
+}
+
+.top-title:hover{
+	color:#5BA91B;
+}
