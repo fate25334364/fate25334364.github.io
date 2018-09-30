@@ -7,7 +7,7 @@
 	height:auto;
 }
 body{
-	overflow-x:hidden;
+	/*overflow-x:hidden;*/
 }
 input{
 	background:none;
@@ -15,50 +15,42 @@ input{
 	text-align:center;
 	border:none;	
 }
-.container{
-	max-width:100%;
-}
+
+/*-----------------------------chrome-top--------------------------------*/
 
 .chrome-top{
+	margin:0 auto;
 	height:100px;
-	width: 1300px;
-	margin:auto;
+	width:100%;
+	position:relative;
 }
 .htc-logo{
 	width: 100px;
 	height: 100px;
+	margin-left:10%;
 }
 
 /*main-nav-block*/
 
 .main-nav-block{
-	height:100px;
-	width: 800px;
+	height:90px;
+	width: 80%;
+	margin-left:15%;
 	position:absolute;	
-	margin-left:130px;
 	margin-top:-90px;
 	padding-top:40px;
+	z-index:1;
 }
-
+.menu-list{
+	width:80%;
+	height:30px;
+}
 .menu-list li{
 	font-size:14px;
-	height:100px;
-	width:130px;
+	height:30px;
+	width:10%;
 	float: left;
 	text-align:center;
-}
-
-.menu-list li:last-child{
-	margin-right: 0;
-}
-
-.sub-menu{
-	position: absolute;
-	left: 0;
-	top:100px;
-	height: 0;
-	overflow: hidden;
-	transition: height 0.5s;
 }
 .title a:link{
 	color:#3D4039;
@@ -70,18 +62,57 @@ input{
 	color:#7BD332;
 }
 
+/*has-sub-menu*/
+
+.sub-menu{
+	text-align:center;
+	position: absolute;
+	width:100%;
+	margin:30px auto;
+	height:0;
+	overflow: hidden;
+	transition: height 0.3s;
+	background:#CCC;
+	right:0.5%;
+}
+.align-center{
+	float:left;	
+}
+.permanent-link{
+	text-align:right;
+	font-size:18px;
+	font-weight:bold;
+	margin:30px auto;
+}
+.standard-product{
+	margin:30px auto;
+}
+
+/*search-block*/
+
+.search-block{
+	position:absolute;
+	z-index:1;
+	border:1px #000 solid;
+	margin-right:30%;
+	width:200px;
+	margin:-50px 0 0 80%;
+}
+
 /*top-nav-block*/
 
 .top-nav-block{
 	position:absolute;
 	vertical-align:middle;
-	width:500px;
+	width:250px;
 	height:30px;
 	font-size:5px;
-	margin:-75px 0 0 75%;	
+	margin:-80px 0 0 75%;	
+	z-index:1;
 }
 .top-nav-block ul li{
-	float: left;	
+	float: left;
+	margin-left:2%;	
 }
 .top-title:link{
 	color:#7BD332;
@@ -94,42 +125,49 @@ input{
 }
 .dot-green{
 	background: #FF5733;
-	width: 10px;
-	height: 10px;
+	width: 5px;
+	height: 5px;
 }
 
-/*search-block*/
 
-.search-block{
-	width:400px;
-	margin:-45px 0 0 86%;
-}
-
-/*-------------------------------------------------------------*/
-
-/*chrome-mian*/
+/*-----------------------------chrome-mian--------------------------------*/
 
 .chrome-mian{
-	margin:30px 10px 10px 10px;
+	margin:10px 10px;
 }
 
-/*U12+*/
+/*main-top-block*/
 
+.main-top-block{
+	margin-top:-10px;
+}
+.carousel slide{
+	position:absolute;
+}
+
+/*carousel-caption*/
+
+.carousel-caption{
+	position:absolute;
+	width:40%;
+	height:50%;
+	color:#FFF;
+	margin-left:-50px;
+}
+.carousel-caption img{
+	margin-top:-100px;
+}
 .carousel-caption ul{
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-	width:300px;
+	width:100%;
 	text-align:center;
-	text-decoration:none;
+	margin-top:-25px;
+	margin-left:5px;
 }
 .carousel-caption li{
 	border:2px solid #FFF;
 	font-size:14px;
-	text-align:center;
 	float: left;
-	text-decoration:none;
+	margin-top:10px;
 }
 .carousel-caption li a:link{
 	color:#FFF;
@@ -141,41 +179,42 @@ input{
 	color:#000;
 	background:#FFF;
 }
-
-/*U12+ first*/
-
-.carousel-caption{
-	position:relative;
-	width:70%;
-	height:40%;
-	top:0;
-	color:#FFF
+.carousel-caption h2{
+	width:100%;
+	margin:-25px 0 50px -60px;
+	font-weight:500;
+	letter-spacing:5px;
 }
+	
+
+/*輪播第二張圖*/
+
+
 .cryptokitties{	
-	width:45%;
-	height:30%;
+	width:75%;
+	height:20%;
+	position:absolute;
+	margin-left:-180px;
 }
 .cryptokitties-text{
+	position:inherit;
 	color:#000;
-}
-.cryptokitties-text h4{
+	letter-spacing:normal;
+	font-size:24px;
 	font-weight:bold;
+	left:55px;
+	top:-10px;
 }
 .cryptokitties-text-content{
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-	width:300px;
+	width:100%;
 	text-align:center;
-	text-decoration:none;
+	margin-left:5px;
 }
 .cryptokitties-text-content li{
 	border:2px solid #000;
 	font-size:14px;
-	text-align:center;
-	float:left;
-	text-decoration:none;
+	float: left;
+	margin-top:10px;
 }
 .cryptokitties-text-content li a:link{
 	color:#000;
@@ -193,12 +232,11 @@ input{
 .main-center-top-picture{
 	width:100%;
 	float: left;
-	word-spacing:15px;
+	word-spacing:5px;
 	margin:10px 0 10px 0;
 }
 .main-center-top-picture img{
 	width:32%;
-	height:10%;
 }
 
 /*main-center-down-block*/
@@ -255,13 +293,13 @@ input{
 .phone{
 	margin:50px 3% 30px 3%;
 	float:left;
-	width:9%;
+	width:10%;
 	height:185px;
 }
 .phone-double{
 	margin:50px 1% 30px 1%;
 	float:left;
-	width:20%;
+	width:17%;
 	height:250px;
 }
 .phone img{
@@ -296,7 +334,7 @@ input{
 	width:200px;
 }
 	
-/*chromebottom---------------------------*/
+/*-----------------------chromebottom---------------------------*/
 
 .chromebottom{
 	margin:-20px 10px;
@@ -309,4 +347,5 @@ input{
 	margin:0 20px;
 	margin-bottom:10px;
 }
+
 
