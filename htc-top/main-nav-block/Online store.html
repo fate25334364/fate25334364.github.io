@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTC網路商店</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../main-htc.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body>
+	<div class="chrome-top">
+		<div class="logo-block"><a href="../../index.html"><img class="htc-logo" src="../../images/htc.png"></a></div>
+		<div class="main-nav-block">
+			<ul class="menu-list">
+				<li class="no-sub-menu">
+					<div class="title"><a href="Online store.html">網路商店</a></div></li>
+				<li class="has-sub-menu">
+					<div class="title" id="title"><a href="product.html">產品</a></div>
+					<div class="sub-menu" id="sub-menu">
+						<div class="permanent-link">
+							<div class="align-center"  id="align-center">
+								<a href="#">__ 智慧型手機</a><br>
+								<a href="#">__ HTC RE</a><br>
+								<a href="#">__ VIVE</a><br>
+								<a href="#">__ 健身</a><br>
+								<a href="#">__ 配件</a></div></div>
+						<div class="standard-product">
+							<div class="align-center">
+								<a title="HTC U12+" href="#">
+									<img alt="HTC U12+" src="../../images/htc-u12-plus-translucent-blue-2v-listing.png"/>
+									<div class="product-name">HTC U12+</div>
+									<div class="product-desc">堅持挑戰無極限</div></a></div></div>
+						<div class="standard-product">
+							<div class="align-center">
+							<a title="HTC Desire 12 | 12+" href="#">
+								<img alt="HTC Desire 12 | 12+" src="../../images/htc-desire-12-desire-12-plus-listing.png"/>
+								<div class="product-name">HTC Desire 12 | 12+</div>
+								<div class="product-desc">超大視野 一手掌握</div></a></div></div>
+						<div class="standard-product">
+							<div class="align-center">
+								<a title="HTC U11 EYEs" href="#">
+								<img alt="HTC U11 EYEs" src="../../images/htc-u11-eyes-red-2v-listing.png"/>
+								<div class="product-name">HTC U11 EYEs</div>
+								<div class="product-desc">旗艦照相 智慧雙眼</div></a></div></div>
+						<div class="standard-product">
+							<div class="align-center">
+							<a title="HTC U11+" href="#">
+							<img alt="HTC U11+" src="../../images/htc-u11-plus-silver-2v-listing.png"/>
+							<div class="product-name">HTC U11+</div>
+							<div class="product-desc">壓一下 全面升級</div></a></div></div></div></li>
+				<li class="no-sub-menu">
+					<div class="title"><a href="vive.html">VIVE</a></div></li>
+				<li class="no-sub-menu">
+					<div class="title"><a href="forum.html">HTC論壇</a></div></li>
+				<li class="no-sub-menu">
+					<div class="title"><a href="Specialty store.html">HTC專賣店</a></div></li>
+				<li class="no-sub-menu">
+					<div class="title"><a href="Focus message.html">焦點訊息</a></div></li></ul></div>
+					
+		<div class="search-block">
+			<div class="search-center">
+				<form class="htc-search-form d-search-form" method="get" name="search" action="/tw/search/" id="HtcSearchForm">
+				<input class="submit" type="submit" name="submit" value=""/>
+				<input placeholder="搜尋" aria-label="搜尋" class="query" type="text" maxlength="100" name="q"/></form></div></div>
+
+		<div class="top-nav-block">
+			<ul class="top-nav-wrapper">
+				<li class="top-item">
+					<a class="top-title" href="#">線上客服</a></li>
+				<li class="top-item">
+					<div class="dot-green"><div class="circle"></div></div></li>
+				<li class="top-item">
+					<a class="top-title" href="#">幫助中心</a></li>
+				<li class="top-item">
+					<div class="dot-green"><div class="circle"></div></div></li>
+				<li class="top-item">
+					<a class="top-title" href="#">支援服務</a></li>
+				<li class="top-item">
+					<div class="dot-green"><div class="circle"></div></div></li>
+				<li class="top-item">
+					<a class="top-title" href="#" >註冊</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<footer class="chromebottom">
+		<ul>
+			<li><input type="button" value="台灣" class="language"></li>
+			<li>&copy 2018 宏達國際電子股份有限公司</li>
+			<li><input type="button" value="隱私權政策" class="Privacy"></li>
+			<li><input type="button" value="產品安全性" class="safety"></li>
+			<li><input type="button" value="連線" class="connection"></li>
+		</ul>
+	</footer>
+	
+	<script>
+		var li=document.getElementById("title");
+		var nav=document.getElementById("sub-menu");
+		var a=document.getElementById("align-center");
+
+		li.onmouseover=function() {
+			nav.style.height="300px";     
+		}
+		li.onmouseout=function() {
+			nav.style.height="0";       
+		}
+		nav.onmouseover=function() {
+			nav.style.height="300px";      
+		}
+		nav.onmouseout=function() {
+			nav.style.height="0";       
+		}
+		
+		$('#popover').popover({ 
+		  html : true,
+		  title: function() {
+			return $("#popover-head").html();
+		  },
+		  content: function() {
+			return $("#popover-content").html();
+		  }
+		});
+	</script>
+</body>
+</html>
